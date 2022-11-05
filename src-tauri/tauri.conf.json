@@ -16,10 +16,10 @@
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
+      "category": "Music",
       "copyright": "",
       "deb": {
-        "depends": []
+        "depends": ["mpd"]
       },
       "externalBin": [],
       "icon": [
@@ -39,7 +39,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "",
+      "shortDescription": "A MPD client written in Rust",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
