@@ -1,6 +1,9 @@
 use std::process::Command;
 use tauri::command;
 
+#[cfg(target_os = "windows")]
+use std::os::windows::process::CommandExt;
+
 /// Check if mpd is installed.
 #[command]
 pub(crate) fn check_mpd() -> Result<bool, String> {
