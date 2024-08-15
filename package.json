@@ -1,23 +1,37 @@
 {
   "name": "mari",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "tauri": "tauri"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@tauri-apps/api": "^1",
+    "bits-ui": "^0.21.13",
+    "clsx": "^2.1.1",
+    "lucide-svelte": "^0.427.0",
+    "tailwind-merge": "^2.5.2",
+    "tailwind-variants": "^0.2.1"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.2",
-    "@tauri-apps/cli": "^1.1.1",
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.16",
-    "svelte": "^3.49.0",
-    "tailwindcss": "^3.1.8",
-    "vite": "^3.1.0"
-  },
-  "dependencies": {
-    "@tauri-apps/api": "^1.1.0"
+    "@sveltejs/adapter-static": "^3.0.1",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "@tauri-apps/cli": "^1",
+    "autoprefixer": "^10.4.20",
+    "mode-watcher": "^0.4.1",
+    "postcss": "^8.4.41",
+    "svelte": "^4.2.7",
+    "svelte-check": "^3.6.0",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.3"
   }
 }
